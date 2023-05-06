@@ -1,0 +1,36 @@
+.SpellsPerDay {
+
+  grid-row: span 4;
+  table {
+    width: 100%;
+
+    .Total td.Emphasis {
+      // padding: 0;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      // border-top: 1px solid lightgray;
+    }
+
+    td:not(.Emphasis) {
+      // border-right: 1px solid lightgray;
+    }
+
+    td {
+      padding: 0.5em;
+    }
+
+    tr {
+      border: none;
+
+      &:not(:last-child) td {
+        border-bottom: 1px solid lightgray;
+      }
+
+      &.Total td {
+        border-bottom: 1px solid #bbb;
+      }
+      
+    }
+  }
+}

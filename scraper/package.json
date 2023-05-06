@@ -1,0 +1,25 @@
+{
+  "name": "d20scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --env=node",
+    "testWatch": "jest --env=node --watch",
+    "format": "prettier --write --single-quote --jsx-bracket-same-line \"src/**/*.js\" \"scrape.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "crawler": "^1.2.1",
+    "nano": "^8.0.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "prettier": "^1.19.1"
+  }
+}

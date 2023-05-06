@@ -1,0 +1,33 @@
+.ClassInfo {
+	grid-column: span 4;
+
+}
+
+.ClassInfo .ClassFeature {
+	word-wrap: break-word;
+}
+
+.ClassInfo .FeatureTitle {
+	font-weight: bold;
+
+}
+
+
+.ClassInfo .FeatureDesc {
+	word-wrap: break-word;
+	white-space: normal;
+}
+
+.ClassInfo .Copyright {
+	padding-top: 1em;
+}
+
+.ClassInfo div>.public-DraftStyleDefault-block {
+	margin-bottom: 0.5em;
+}
+
+.ClassInfo h3:not(:first-child)>.public-DraftStyleDefault-block {
+	margin-top: 1.5em;
+}
+
+

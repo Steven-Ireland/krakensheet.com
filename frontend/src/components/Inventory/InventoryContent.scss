@@ -1,0 +1,99 @@
+@import 'style/layout.scss';
+@import 'style/branding.scss';
+
+.Inventory-container {
+    .Inventory-content {
+    .Grid {
+        height: max-content;    
+        flex-grow: 1;
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    
+        grid-column-gap: 1.2em;
+        grid-row-gap: 1.2em;
+        padding-bottom: 1.2em;
+      }
+    }
+
+    ul {
+        padding: 0;
+        list-style-type: none;
+  
+        li {
+          cursor: pointer;
+          padding: 0.85em;
+          border-radius: $border-radius;
+          margin: 0.5em;
+
+          &.Item {
+            position: relative;
+            box-shadow: 0px 1px 2px 1px $shadow-color;
+            background-color: $foreground-color;
+  
+            &.is-prepared {
+              border-left: 2px solid $color--black;
+            }
+  
+            .ContextMenu {
+              position: absolute;
+              right: 0px;
+              bottom: 0px;
+              top: 0px;
+              opacity: 0;
+              overflow: hidden;
+              background: $color--white;
+              padding: 0 0.5em;
+  
+              display: flex;
+              align-items: center;
+              
+              i {
+                padding: 0 0.25em;
+              }
+            }
+            &:hover {
+              .ContextMenu {
+                opacity: 1;
+              }
+            }
+
+            .Item-container {
+                display: flex;
+                flex-direction: row;
+        
+                p {
+                  margin-bottom: 0px;
+                }
+        
+                .Title {
+                  white-space: nowrap;
+                }
+        
+                div.Description {
+                  flex-shrink: 1;
+                  min-width: 0;
+                  color: $color--grey;
+        
+                  p {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                  }
+                  br {
+                      display: none;
+                  }
+                }
+        
+                >* {
+                  margin-right: 0.5em;
+                }
+        
+                .ant-tag {
+                  text-transform: capitalize;
+                }
+            }
+            }
+        }
+    }
+}

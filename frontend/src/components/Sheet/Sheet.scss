@@ -1,0 +1,64 @@
+@import "style/layout.scss";
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+.Sheet {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.FlexRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: min-content;
+}
+
+.FlexRow .Wrap {
+	flex-wrap: wrap;
+	flex-grow: 1;
+}
+
+.GridLayout {
+	display:  grid;
+	width: 100%;
+
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+	grid-column-gap: 1.2em;
+	grid-row-gap: 1.2em;
+	padding-bottom: 1.2em;
+
+	@include smallscreen {
+		grid-column-gap: $padding-grid--small;
+		grid-row-gap: $padding-grid--small;
+	}
+}
+
+.Sheet .SkillContainer {
+	display: grid;
+	padding-left: $padding-grid;
+	grid-gap: $padding-grid;
+	grid-template-rows: min-content min-content;
+	width: min-content;
+
+	@include smallscreen {
+		grid-gap: $padding-grid--small;
+		padding-left: $padding-grid--small;
+	}
+}
+
+.DemoSignup {
+	max-width: 24rem;
+	box-shadow: none;
+
+	background-color:  transparent;
+
+	.ant-modal-content {
+		background-color: transparent;
+		box-shadow: inherit;
+	}
+}

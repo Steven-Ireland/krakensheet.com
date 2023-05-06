@@ -1,0 +1,8 @@
+{
+  "_id": "_design/trait",
+  "fulltext": {
+    "search": {
+      "index": "function(doc) { var ret=new Document(); ret.add(doc.name, {\"field\":\"name\"}); return ret }"
+    }
+  }
+}

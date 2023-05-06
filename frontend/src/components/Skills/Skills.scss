@@ -1,0 +1,73 @@
+.Skills {
+	&-counter {
+		position: absolute;
+		top: 1.5em;
+		left: 2em;
+	}
+}
+
+.Skills td {
+	padding-top: .25em;
+	padding-bottom: .25em;
+	padding-right: .25em;
+	padding-left: .25em;
+}
+
+.Skills div.ant-select, .Skills div.ant-select-selection, .Skills div.ant-select-selection-selected-value,
+	.Skills .ant-select div.ant-select-selector {
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.Skills .ant-select div.ant-select-selector input.ant-select-selection-search-input {
+	width: 100%;
+	height: min-content;
+}
+
+.Skills span.ant-select-arrow{
+	display: none;
+	color: transparent;
+}
+
+.Skills td.Interactable {
+	min-width: 25px;
+	text-align: right;
+}
+
+.Skills div.ant-select-focused  {
+	width: 100%;
+}
+
+.Skills div.ant-select-selection-selected-value {
+	padding-right: 0px;
+}
+
+.Skills .ant-select-single.ant-select-show-arrow .ant-select-selection-item, 
+	.Skills .ant-select-single .ant-select-selector,
+	.Skills .ant-select-single .ant-select-selector::after {
+	line-height: initial;
+	height: min-content;
+}
+
+.Skills div.ant-select-selection__rendered .ant-select-selection-selected-value {
+	
+}
+
+// .ant-select-dropdown .ant-select-dropdown-menu-item {
+// 	text-overflow: clip;
+// }
+
+.Skills [draggable="true"], .Skills [draggable="true"] *, .Skills [draggable=true] .ant-select-disabled .ant-select-selection {
+	cursor: grab;
+}
+
+.Skills [draggable="true"]:nth-child(even) {
+	/* background-color: #f8f8f8; */
+}
+
+.Skill {
+	&--draggedOver td {
+		border-top: 1px solid black;
+	}
+}

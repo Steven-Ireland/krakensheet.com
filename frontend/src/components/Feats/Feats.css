@@ -1,0 +1,28 @@
+
+.Feats td {
+	padding-top: .25em;
+	padding-bottom: .25em;
+	padding-right: .5em;
+	padding-left: .25em;
+	max-width: 25em;
+	white-space: initial;
+}
+
+.Feats th {
+	transform: none;
+}
+
+.Feats {
+  padding-right: 2em;
+	flex-grow: 0;
+}
+
+.Feats .Feat {
+	cursor: help;
+
+	border-bottom: none;
+}
+
+.Feats .ant-empty-normal {
+	margin: auto;
+}

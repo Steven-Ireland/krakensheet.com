@@ -1,0 +1,39 @@
+@import 'style/layout.scss';
+
+.SpellBook {
+  margin-left: 1em;
+  margin-right: 1em;
+  
+  &-container {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  &-content {
+    min-width: 0px;
+    flex-grow: 1;
+  }
+
+  .Sidebar {
+    width: max-content;
+    height: max-content;
+    padding-right: $padding-grid;
+  }
+
+  .Grid {
+    height: max-content;    
+    flex-grow: 1;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    grid-column-gap: 1.2em;
+    grid-row-gap: 1.2em;
+    padding-bottom: 1.2em;
+  }
+
+  .Character.Section {
+    height: min-content;
+  }
+}

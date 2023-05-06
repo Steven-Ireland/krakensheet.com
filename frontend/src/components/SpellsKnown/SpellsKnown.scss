@@ -1,0 +1,115 @@
+@import 'style/branding.scss';
+
+.SpellsKnown {
+  position: relative;
+
+  section.SpellLevel {
+    >p {
+      text-align: left;
+      border-bottom: 1px solid $color--grey;
+      padding-bottom: 0.25em;
+    }
+
+    ul {
+      padding: 0;
+      list-style-type: none;
+
+      li {
+        cursor: pointer;
+        padding: 0.85em;
+        border-radius: $border-radius;
+        margin: 0.5em;
+
+        &.Spell {
+          position: relative;
+          box-shadow: 0px 1px 2px 1px $shadow-color;
+          background-color: $foreground-color;
+
+          &.is-prepared {
+            border-left: 2px solid $color--grey;
+          }
+
+          .ContextMenu {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            top: 0px;
+            opacity: 0;
+            overflow: hidden;
+            background: $foreground-color;
+            padding: 0 0.5em;
+
+            display: flex;
+            align-items: center;
+            
+            span {
+              padding: 0 0.25em;
+            }
+          }
+          &:hover {
+            .ContextMenu {
+              opacity: 1;
+            }
+          }
+
+          .Spell-container {
+            display: flex;
+            flex-direction: row;
+
+            p {
+              margin-bottom: 0px;
+            }
+
+            .Title {
+              white-space: nowrap;
+            }
+
+            div.Description {
+              flex-shrink: 1;
+              min-width: 0;
+              color: $color--grey;
+
+              p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+
+            >* {
+              margin-right: 0.5em;
+            }
+
+            .ant-tag {
+              text-transform: capitalize;
+            }
+          }
+
+          .CastingStatus {
+            position: absolute;
+            bottom: 0px;
+            left: 0.85em;
+
+            span {
+              width: 5px; 
+              height: 5px;
+              display: inline-block;
+              margin-right: 2px;
+              border: 1px solid $color--grey;
+              
+              &.CastingStatus-exhausted {
+                background-color: $color--grey;
+              }
+            }
+          }
+        }
+
+        .AddMore {
+          &:hover {
+            background-color: $color--white;
+          }
+        }
+      }
+    }
+  }
+}

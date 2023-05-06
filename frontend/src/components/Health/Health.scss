@@ -1,0 +1,29 @@
+.Health {
+	flex-grow: 1;
+}
+
+.HealthSettings {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-flow: column;
+
+	&-breakout {
+    width: 100%;
+
+    tr td:last-child {
+    	text-align: right;
+    }
+  }
+}
+
+.Health .Current {
+	font-size: 2em;
+}
+
+.Health .Damage {
+	color: darkred;
+}
+
+.Health .InputContainer {
+	margin-bottom: .5em;
+}

@@ -1,0 +1,30 @@
+@import 'style/branding.scss';
+
+.SpellDetail {
+  section:not(:first-child) {
+    margin-top: 2em;
+  }
+
+  h1,p {
+    margin: 0;
+  }
+
+  h1, h2 {
+    @include copy;
+  }
+
+  .CastingInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.25em;
+
+    p {
+      margin: 0;
+    }
+
+    .InfoKey {
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.CombatManeuvers {
+  &-topGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &-additions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+  &-breakout {
+    width: 100%;
+
+    tr td:last-child {
+    	text-align: right;
+    }
+  }
+}
+

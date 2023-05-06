@@ -1,0 +1,14 @@
+{
+  "name": "fateforge-db",
+  "version": "0.0.1",
+  "description": "",
+  "main": "design_docs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {}
+}

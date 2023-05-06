@@ -1,0 +1,9 @@
+.MagicalEffects .EffectsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.MagicalEffects .EffectsContainer .Effect {
+  display: inline-flex;
+  justify-content: space-between;
+}

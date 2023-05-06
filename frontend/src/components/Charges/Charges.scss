@@ -1,0 +1,50 @@
+@import 'style/branding.scss';
+
+.Charges {
+  &-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+  }
+}
+
+.Charge {
+  display: inline-flex;
+  flex-direction: row;
+  padding-right: 0.5em;
+  width: 100%;
+
+  &-main {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+  }
+  &-current {
+    font-size: 1.5em;
+    padding: 0 0.35em 0 0.35em;
+
+    display: inline-flex;
+
+    >div {
+      margin-left: 0.15em;
+      margin-right: 0.15em;
+    }
+  }
+  &-details {
+    margin: auto;
+    padding-left: 0.5em;
+    flex-grow: 1;
+  }
+  i {
+    margin: auto;
+  }
+  .ant-btn {
+    border-color: $color--darkgrey;
+    
+    &:hover {
+      color: $color--white;
+      border-color: $color--white;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import 'style/branding.scss';
+
+.AuxButtons {
+  width: min-content;
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 0;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+    
+  div {
+    padding-bottom: 0.5em;
+  }
+
+  span[role="img"] {
+    cursor: pointer;
+  }
+
+  &--horizontal {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+.AuxButtons-menu {
+  .ant-popover-content .ant-popover-title {
+		color: $color--white;
+	}
+}

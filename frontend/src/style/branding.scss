@@ -1,0 +1,51 @@
+$brand-color: #485A73;
+$brand--dark: #2F4858;
+$brand--light: #459085;
+$brand--medlight: #8d9aac;
+$brand--superlight: #9cc5ff;
+$color--black: #555;
+$color--blacker: #444;
+$color--white: darken(#fff, 5%);
+$color--grey: #bbb;
+$color--darkgrey: #999;
+$icon-color: #aaa;
+$shadow-color: #111;
+$background-color: #222;
+$foreground-color: #333;
+
+$border-radius: 7px;
+
+@mixin subheader {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+@mixin header {
+  font-family: 'Patua One', cursive;
+  font-size: 60px;
+  margin-bottom: 10px;
+  color: $color--blacker;
+  word-wrap: break-word;
+}
+
+@mixin copy {
+  font-size: 1.5em;
+}
+
+@mixin smalldots {
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    position: absolute;
+    // background-image: url("/bigdots.png");
+
+    width: 100%;
+    height: 92%;
+
+    top: -40px;
+    right: -40px;
+    z-index: -1;
+    content: "";
+  }
+}

@@ -1,0 +1,341 @@
+@import '~antd/dist/antd.dark.css';
+@import 'style/branding.scss';
+@import 'style/layout.scss';
+
+body {
+	background-color: $background-color;
+
+	overflow-y: hidden;
+
+	height: 100%;
+}
+
+html, #root, .App {
+	height: 100%;
+}
+
+.App {
+	display: flex;
+	flex-direction: row;
+
+	@include tinyscreen {
+		zoom: 0.80;
+	}
+}
+
+p.ContextMenuOption {
+	margin:  0px;
+}
+
+.ant-popover {
+	max-width: 400px;
+}
+
+.Detail {
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+
+.ant-popover-content .ant-popover-title {
+	background-color: $brand-color;
+	border-top-right-radius: 1em;
+	border-top-left-radius: 1em;
+}
+
+.ant-popover-inner {
+	border-radius: 1em;
+} 
+
+.ant-popover-title a {
+	color: #ECEFF4;
+}
+
+.Content {
+	height: 100%;
+	overflow-y: auto;
+	flex-grow: 1;
+
+	flex-direction: column;
+	display: flex;
+
+	@media all and (max-width: 1200px) {
+		padding-left: 0.1em;
+		padding-right: 0.1em;
+	}
+
+	.Centered {
+		display: inline-flex;
+		flex-direction: column;
+		text-align: center;
+		color: slategrey;
+		margin: auto;
+		width: 100%;
+		margin-top: 3em;
+	}
+} 
+
+th {
+	transform-origin: 0% 0%;
+	transform: rotate(-45deg);
+	font-size: .9em;
+}
+
+th.Flat {
+	transform: none;
+	text-align: center;
+}
+
+table.Vertical th {
+	font-size: .85em;
+	padding-right: .5em;
+}
+
+table.Vertical td, th {
+	vertical-align: middle;
+}
+
+table.CrossThatch th.Flat {
+	font-size: .6em;
+}
+
+table.CrossThatch td {
+	padding: .2em;
+	padding-right: .6em;
+	padding-left: .6em;
+	text-align: center;
+}
+
+table.CrossThatch td:not(:last-child) {
+	border-right:  1px solid $color--darkgrey;
+}
+
+
+tr:not(:last-child){
+	border-bottom: 1px solid $color--darkgrey;
+}
+
+td.Title {
+	font-weight: 600;
+	color: $color--white;
+}
+
+
+td {
+	text-align: center;
+}
+
+td>div {
+	min-width: 25px;
+	box-sizing: content-box;
+}
+
+td.Emphasis + td {
+	padding-left: 0.5em;
+}
+
+td.Left {
+	text-align: left;
+}
+
+td.Right {
+	text-align: right;
+}
+
+
+td.Emphasis {
+	color: $color--white;
+	font-weight: 600;
+	border: 1px solid $color--darkgrey;
+	margin: 1px;
+}
+
+.AutoMargin {
+	margin: auto;
+}
+
+.SectionTitle {
+	margin-top: $margin-sectionTitle;
+	color: $color--white;
+	font-weight: 600;
+	padding-bottom: 0em;
+	margin-bottom: 1.5em;
+	padding-left: .5em;
+	padding-right: .5em;
+
+	width: min-content;
+	height: min-content;
+
+	background: linear-gradient(0deg, $foreground-color 50%, #00000000 50%);
+
+	@include smallscreen {
+		margin-top: $margin-sectionTitle--small;
+		background: none;
+	}
+
+}
+
+.Section {
+	// border: 1px solid darkgrey;
+	// border-left: 1px solid darkgrey;
+	// border-right: 1px solid darkgrey;
+	border-radius: $border-radius;
+	box-shadow: 0px 1px 2px 1px $shadow-color;
+
+	padding: $padding-section;
+
+	white-space: nowrap;
+
+	background-color: $foreground-color;
+
+	vertical-align: top;
+	height: 100%;
+	position: relative;
+
+	@include smallscreen {
+		padding: $padding-section--small;
+	}
+}
+
+.Red {
+	color: #BF616A;
+}
+
+.Block {
+	margin: 0em;
+	padding: 0.3em;
+	height: min-content;
+	text-align: center;
+	vertical-align: middle;
+	flex-grow: 1;
+}
+
+.BlockLabel {
+	font-size: .9em;
+	font-weight: 600;
+	margin-bottom: .5em;
+}
+
+.BlockValue {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+
+.BigText {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.BigIcon {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-right: 0.25em;
+	vertical-align: super;
+}
+
+.MediumText {
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+.ant-divider-inner-text {
+	font-size: .8em;
+}
+
+.Divided {
+	display: inline-flex;
+	width: 100%;
+}
+
+.Divided .Left {
+	align-self: start;
+}
+
+.Divided .Right {
+}
+
+.Divided .Expand {
+	flex-grow: 1;
+}
+
+.Divided.Vertical {
+	flex-direction: column;
+}
+
+.Divided.Vertical>:last-child {
+	margin-top: $padding-grid;
+
+	@include smallscreen {
+		margin-top: $padding-grid--small;
+	}
+}
+
+.SpanTwo {
+	grid-column: span 2;
+}
+
+.SpanThree {
+	grid-column: span 3;
+	@media all and (max-width: 1500px) {
+		grid-column: span 2;
+	}
+}
+
+
+div[contenteditable]:not(.notranslate):focus {
+	box-shadow: initial;
+	border: 1px dashed lightgrey;
+	box-sizing: border-box;
+	outline:  none;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-left: -6px;
+	margin-right: -6px;
+	margin-top: -3px;
+	margin-bottom: -3px;
+}
+
+div[contenteditable] {
+	cursor: text;
+}
+
+div[contenteditable]:hover:not(:focus) {
+	border: 1px dashed lightgrey;
+	margin: -1px;
+}
+
+td {
+	cursor: default;
+}
+
+td.Interactable {
+	cursor: pointer;
+}
+
+
+
+tr.Removeable {
+	background-color: #BF616A30;
+
+	border-top: 0.35em solid white;
+	padding-top: 1em;
+
+	cursor: pointer;
+}
+
+.react-contexify {
+	border-radius: 0.5em;
+}
+
+body .react-contexify__item:not(.react-contexify__item--disabled):hover>.react-contexify__item__content {
+	background-color: #5E81AC;
+}
+
+p.Copyright {
+	font-size: 0.7em;
+	word-break: break-word;
+	white-space: initial;
+}

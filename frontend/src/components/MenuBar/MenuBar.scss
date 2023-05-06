@@ -1,0 +1,40 @@
+@import 'style/branding.scss';
+
+@media all and (max-width: 1366px){
+	.MenuBar {
+		// display: none;
+	}
+}
+
+.MenuBar {
+	padding-top: 2em;
+	text-align: left;
+	width: max-content;
+	
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		padding: 0.5em 2em;
+		margin: 0.5em 0.5em;
+		color: $brand--medlight;
+
+		&.MenuBar-section {
+			padding-top: 1.5em;
+			border-bottom: 1px solid $shadow-color;
+		}
+	}
+
+	&-interactable, &-active {
+		transition: 0.5s;
+    border-radius: 0.4em;
+		cursor: pointer;
+		&:hover {
+			background-color: $foreground-color;
+			color: $brand--superlight;
+		}
+	}
+}

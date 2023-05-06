@@ -1,0 +1,22 @@
+$padding-grid: 1.2em;
+$padding-grid--small: 0.5em;
+
+$padding-section: 1.5em;
+$padding-section--small: 0.5em;
+$margin-sectionTitle: -2.25em;
+$margin-sectionTitle--small: $margin-sectionTitle + 1em;
+
+$smallscreen-width: 1100px;
+$tinyscreen-width: 1024px;
+
+@mixin smallscreen {
+  @media (max-width: $smallscreen-width) {
+    @content;
+  }
+}
+
+@mixin tinyscreen {
+  @media (max-width: $smallscreen-width) {
+    @content;
+  }
+}

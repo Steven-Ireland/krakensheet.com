@@ -1,0 +1,23 @@
+@import 'style/branding.scss';
+@import 'style/layout.scss';
+
+.About {
+  width: 100%;
+
+  &-container {
+    margin: auto;
+    max-width: $smallscreen-width;
+  }
+
+  section {
+    margin: 2em;
+  }
+
+  h1 {
+    @include header;
+  }
+
+  p {
+    @include copy;
+  }
+}

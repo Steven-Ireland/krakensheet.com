@@ -1,0 +1,18 @@
+.UserManager {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.LogInModal {
+	max-width: 24rem;
+	box-shadow: none;
+
+	background-color:  transparent;
+}
+
+.LogInModal .ant-modal-content {
+	background-color: transparent;
+	box-shadow: inherit;
+}

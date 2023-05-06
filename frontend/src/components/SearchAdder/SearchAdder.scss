@@ -1,0 +1,27 @@
+@import 'style/branding.scss';
+
+.BigOmniModal div.ant-modal-header {
+	padding: 0em;
+}
+
+.BigOmniModal div.ant-modal-header input {
+	padding: 2em;
+}
+
+.BigOmniModal div.ant-modal-body {
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0em;
+}
+
+.BigOmniModal div.ant-modal-body .ant-list-item.SearchAdderResult {
+	padding: 1em;
+	cursor: pointer;
+	transition: background-color .4s;
+}
+
+.BigOmniModal div.ant-modal-body .ant-list-item.SearchAdderResult:hover {
+	background-color: $foreground-color;
+	transition: background-color .4s;
+}

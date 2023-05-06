@@ -1,0 +1,31 @@
+.Defenses .DefenseGrid {
+	display: grid;
+	height: 100%;
+}
+.Defenses .MultiDefense {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.Defenses .MultiDefense .Block {
+	flex-grow: 1;
+}
+
+.Defenses .BreakoutHolder {
+	width: 100%;
+	padding: 1em;
+}
+
+.Defenses .DefensesBreakout {
+	width: 100%;
+}
+
+.Defenses .DefensesBreakout tr td:last-child {
+	text-align: right;
+}
+
+.Defenses {
+	.ant-popover-content .ant-popover-title {
+		color: white;
+	}
+}

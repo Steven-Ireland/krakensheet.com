@@ -1,0 +1,78 @@
+@import "style/branding.scss";
+@import "style/layout.scss";
+
+.NavBar {
+	display: inline-flex;
+
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: $padding-grid;
+	align-items: center;
+
+	color: $brand--superlight;
+	background-color: $foreground-color;
+	text-transform: capitalize;
+	box-shadow: 0px 1px 2px 1px $shadow-color;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+
+	&.NavBar--noMargin {
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+}
+
+.NavBar .NavContent {
+	display: inline-flex;
+	padding: 0em 2em;
+	align-items: center;
+
+	width: 100%;
+	margin: auto;
+}
+
+.NavBar .MenuButtons {
+	display: inline-flex;
+	flex-direction: row;
+
+	div:not(:last-child) {
+		padding-right: 2em;
+	}
+}
+
+.NavBar div {
+	font-weight: normal;
+}
+
+.NavBar .Main {
+	flex-grow: 1;
+	font-size: 1.2em;
+}
+
+.NavBar {
+	.MenuButtons *, .Brand {
+		transition: color 0.3s;
+	}
+}
+
+.NavBar .MenuButtons div {
+	cursor: pointer;
+}
+
+.NavBar .MenuButtons div:hover, .NavBar .Brand:hover {
+	color: $brand--light;
+}
+
+.NavBar .Brand {
+	@include header;
+	font-size: 1.2em;
+	color: $brand--superlight;
+	width: max-content;
+	margin: 0;
+	cursor: pointer;
+}

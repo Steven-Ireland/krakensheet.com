@@ -1,0 +1,162 @@
+@import "style/branding.scss";
+
+.Landing {
+	display: inline-flex;
+	flex-direction: column;
+
+	.Jumbo {
+		text-align: left;
+
+		width: 100%;
+		padding: 10px;
+		padding-top: 2em;
+		padding-bottom: 4em;
+		background-color: $brand--superlight;
+
+		display: grid;
+		grid-gap: 2em;
+		// grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+
+		@media all and (max-width: 800px) {
+			grid-template-columns: 1fr;
+		}
+
+		>div {
+			display: flex;
+		}
+		img {
+			display: block;
+			margin: auto;
+			width: 100%;
+			max-width: 800px;
+		}
+		h1 {
+			font-family: 'Patua One', cursive;
+			font-size: 70px;
+			text-align: left;
+			margin-bottom: 0.5em;
+
+			color: #333;
+
+			word-wrap: break-word;
+		}
+	}
+
+	section {
+		display: grid;
+		grid-gap: 3em;
+		grid-template-columns: 1fr 1fr;
+		margin: auto;
+		margin-top: 8em;
+		padding-left: 1em;
+		padding-right: 1em;
+		max-width: 1000px;
+
+		p {
+			@include copy;
+		}
+
+		ul {
+			columns: 2;
+			li {
+				font-size: 1.5em;
+				margin: 0 1em;
+			}
+		}
+
+		&.Single {
+			grid-template-columns: 1fr;
+			grid-gap: 1em;
+		}
+
+		@media all and (max-width: 1000px) {
+			grid-template-columns: 1fr;
+		}
+		@media all and (min-width: 1000px) {
+			div.dots {
+				@include smalldots;
+			}
+		}
+
+		h2 {
+			@include subheader;
+			text-align: left;
+		}
+
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.Note {
+		text-align: center;
+	}
+	.TryIt {
+		h2 {
+			text-align: center;
+		}
+		a[href] {
+			box-shadow: 0px 5px 20px 0px $brand-color;
+		}
+	}
+	.AdditionalInfo {
+		padding-bottom: 4em;
+		position:  relative;
+		margin: auto;
+
+		display: inline-flex;
+		flex-direction: column;
+
+
+		h2 {
+			font-size: 2.5em;
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+
+	.SignupContainer {
+		padding-bottom: 4em;
+	}
+	
+	.FeatureList {
+		font-size: 1.5em;
+	}
+}
+
+.InfoContainer {
+	width: max-content;
+	margin: auto;
+	margin-top: 4em;
+
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.DemoContainer {
+	display: grid;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+
+	&.Two {
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	@media all and (max-width: 560px){
+		grid-template-columns: 1fr;
+		&.Two {
+			grid-template-columns: 1fr;
+		}
+
+		.SpanTwo {
+			display: none;
+		}
+	}
+}
+

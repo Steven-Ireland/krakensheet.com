@@ -1,0 +1,48 @@
+@import 'style/layout.scss';
+@import 'style/branding.scss';
+
+.Inventory {
+  margin-left: 1em;
+  margin-right: 1em;
+  
+  &-container {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  &-section {
+    >p {
+      text-align: left;
+      border-bottom: 1px solid $color--grey;
+      padding-bottom: 0.25em;
+    }
+
+    ul {
+      padding: 0;
+      list-style-type: none;
+
+      li {
+        cursor: pointer;
+        padding: 0.85em;
+        border-radius: $border-radius;
+        margin: 0.5em;
+      }
+    }
+  }
+
+  &-content {
+    min-width: 0px;
+    flex-grow: 1;
+  }
+
+  .Sidebar {
+    width: max-content;
+    height: max-content;
+    padding-right: $padding-grid;
+  }
+
+  .Character.Section {
+    height: min-content;
+  }
+}

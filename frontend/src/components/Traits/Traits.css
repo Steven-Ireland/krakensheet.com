@@ -1,0 +1,31 @@
+.Traits td {
+	padding-top: .25em;
+	padding-bottom: .25em;
+	padding-right: .5em;
+	padding-left: .25em;
+	max-width: 25em;
+	white-space: initial;
+}
+
+.Traits th {
+	transform: none;
+}
+
+.Traits {
+	padding-right: 2em;
+	flex-grow: 0;
+}
+
+.Traits .Trait {
+	cursor: help;
+
+	border-bottom: none;
+}
+
+.Traits .Trait.Removeable {
+	cursor: pointer;
+}
+
+.Traits .ant-empty-normal {
+	margin: auto;
+}

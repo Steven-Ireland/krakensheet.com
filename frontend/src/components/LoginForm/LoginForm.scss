@@ -1,0 +1,43 @@
+@import 'style/branding.scss';
+
+.LoginForm {
+	box-shadow: 0px 5px 30px -10px $shadow-color;
+
+	border-radius: 1em;
+	max-width: 400px;
+
+	flex-grow: 1;
+}
+
+.LoginForm .FormContainer {
+	padding: 2em;
+	color: $color--white;
+	background: $foreground-color;
+
+	border-bottom-right-radius: 1em;
+	border-bottom-left-radius: 1em;
+}
+
+.LoginForm .TitleBar {
+	background: $background-color;
+	color: $brand--light;
+
+	padding: 1em;
+	padding-left: 2em;
+	font-size: 1.2em;
+
+	border-top-right-radius: 1em;
+	border-top-left-radius: 1em;
+}
+
+.LoginForm .loginButton {
+	width: 100%;
+}
+
+.LoginForm .forgotPassword {
+	float: right;
+}
+
+.LoginForm .Remember {
+	margin-bottom: 0.5em;
+}

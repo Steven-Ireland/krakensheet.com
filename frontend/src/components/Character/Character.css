@@ -1,0 +1,80 @@
+.Character.Section {
+	display: block;
+
+	/*margin-bottom: 2em;*/
+}
+
+.Character .AvatarHolder {
+	display: inline-block;
+}
+
+.Character .CharacterInfo span {
+	display: block;
+}
+
+.Character {
+	margin-bottom: 0.33em;
+}
+
+.Character .Fixed.ant-input-group-wrapper {
+	width: 15rem;
+}
+
+.Character .Fixed.ant-select {
+	width: 15rem;
+}
+
+.Character .Fixed .ant-input-group {
+	width: 100%;
+}
+
+.Character .ant-input {
+	min-width: 3rem;
+}
+
+.Character .ant-input-group, .Character .ant-input-group-wrapper {
+	width: min-content;
+}
+
+
+.Character .BaseAttack input {
+	width: 8rem;
+}
+
+.Character .InfoHolder {
+	display: flex;
+	justify-content: space-between;
+}
+
+.Character .BasicInfo.ant-input-group.ant-input-group-compact, 
+	.Character .ClassInfo.ant-input-group.ant-input-group-compact {
+		flex-wrap: wrap;
+		display: flex;
+		flex-grow: 1;
+		align-content: flex-start;
+}
+
+.Character .ClassInfo {
+	justify-content: flex-end;
+}
+
+.Character .TextBlocks {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+}
+
+.Character .BasicInfo {
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+
+.Character .BasicInfo > * {
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+
+.Character .BasicInfo > * {
+	margin-right: 1em;
+	margin-bottom: 1em;
+}

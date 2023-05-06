@@ -1,0 +1,14 @@
+table.DSList {
+  width: 100%;
+}
+
+.Property {
+  &--draggedOver td {
+    border-top: 1px solid black;
+    cursor: grabbing;
+  }
+
+  &[draggable="true"], &[draggable="true"] * {
+    cursor: grab;
+  }
+}

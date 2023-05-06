@@ -1,0 +1,9 @@
+.Speed {
+	table {
+		width: 100%;
+	}
+}
+
+.Speed table.CrossThatch td:not(:last-child) {
+	/* border-right:  1px dashed lightgrey; */
+}

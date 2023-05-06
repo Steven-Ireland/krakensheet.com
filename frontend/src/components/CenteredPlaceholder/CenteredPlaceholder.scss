@@ -1,0 +1,17 @@
+@import 'style/branding.scss';
+
+.CenteredPlaceholder {
+  width: 100%;
+
+  &-container {
+    margin: auto;
+    text-align: center;
+    color: $icon-color;
+
+    i {
+      padding-bottom: 0.15em;
+      font-size: 2.5em;
+    }  
+  }
+  
+}

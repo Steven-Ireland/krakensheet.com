@@ -1,0 +1,31 @@
+@import "style/branding.scss";
+
+
+.SheetSelector.Section {
+	width: 30rem;
+	display: block;
+
+	margin: 4em auto;
+	height:  auto;
+}
+
+.SheetSelector .SheetSelectorList {
+	margin: 0.5em;
+}
+
+.SheetSelector .SheetSelectorResult {
+	padding: 0.75em;
+	border-radius: $border-radius;
+	box-sizing: content-box;
+	cursor: pointer;
+}
+
+.SheetSelector .SheetSelectorResult:hover {
+	border: 1px dashed $color--darkgrey;
+	margin: -1px;
+}
+
+.SheetSelector .NewSheetButtonHolder {
+	margin-left: auto;
+	width: min-content;
+}

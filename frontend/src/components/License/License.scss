@@ -1,0 +1,17 @@
+@import 'style/branding.scss';
+@import 'style/layout.scss';
+
+.License {
+  &-container {
+    margin: 2em auto;
+    max-width: $smallscreen-width;
+  }
+
+  h1 {
+    @include header;
+  }
+
+  p.Explain {
+    @include copy;
+  }
+}
